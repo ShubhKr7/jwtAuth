@@ -35,7 +35,7 @@ function getUser(token){
     return jwt.verify(token, secret);
 }
 
-//Making a GET requrest gateway
+//Making a GET request gateway
 app.get('/',(req,res)=>{
     //Assigning the whole data in the body to user
     const user=req.body;
